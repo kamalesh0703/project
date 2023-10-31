@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | E-commerce product page</title>
-</head>
-<body>
-  <nav>
-    <img src="./images/" alt="">
-  </nav>
-  <h1>hello</h1>
-<!-- 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="company">
+        <div class="mob-menu"><img src="./images/icon-menu.svg" alt="" />
+        </div>
+        <img src="./images/logo.svg" alt="company-logo" class="logo" />
+      </div>
+      <div class="nav-lists">
+        <div class="nav-list-left">
+          <li class="nav-link"><a href="#">Collections</a></li>
+          <li class="nav-link"><a href="#">Men</a></li>
+          <li class="nav-link"><a href="#">Women</a></li>
+          <li class="nav-link"><a href="#">About</a></li>
+          <li class="nav-link"><a href="#">Contact</a></li>
+        </div>
+        <div class="nav-list-right">
+          <li class="right-nav-link cart">
+            <a href="#"><img src="./images/icon-cart.svg" alt="" /></a>
+            <div class="car-box">
+              <h4>Cart</h4>
+              <div class="cart-details">
+                <img
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt="img"
+                  class="card-tumb-img"
+                />
+                <div class="cartname-details">
+                  <p>Fall Limited Edition Sneakers</p>
+                  <p>$125.00 &#10005; 3 $375.00</p>
+                </div>
+                <p>
+                  <img
+                    src="./images/icon-delete.svg"
+                    alt="icon"
+                    class="delete-icon"
+                  />
+                </p>
+              </div>
+              <div class="card-box-btn">
+                <button>Check Out</button>
+              </div>
+            </div>
+          </li>
+          <li class="right-nav-link">
+            <img src="./images/image-avatar.png" alt="avatar" class="avator" />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <!-- 
   Collections
   Men
   Women
@@ -38,5 +88,5 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body>
+  </body>
 </html>
