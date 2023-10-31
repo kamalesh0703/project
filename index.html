@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+<!-- 1 -->
+    <link 
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <img src="./images/logo.svg" alt="company-logo" />
+        <ul class="nav-lists">
+          <ul class="nav-list">
+            <li class="nav-link features">
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="icon">
+              <ul class="features-list">
+                <li class="nav-link features-link">
+                  <img src="./images/icon-todo.svg" alt="icon">
+                  Todo List
+                </li>
+                <li class="nav-link features-link">
+                  <img src="./images/icon-calendar.svg" alt="icon">
+                  Calender
+                </li>
+                <li class="nav-link features-link">
+                  <img src="./images/icon-reminders.svg" alt="icon">
+                  Reminders
+                </li>
+                <li class="nav-link features-link">
+                  <img src="./images/icon-planning.svg" alt="icon">
+                  Planning
+                </li>
+              </ul>
+            </li>
+            <li class="nav-link company">
+              Company
+              <img src="./images/icon-arrow-down.svg" alt="icon">
+              <ul class="company-list">
+                <li class="nav-link company-link">History</li>
+                <li class="nav-link company-link">Our Team</li>
+                <li class="nav-link company-link">Blog</li>
+              </ul>
+            </li>
+            <li class="nav-link">
+              Careers
+            </li>
+            <li class="nav-link">
+              About
+            </li>
+          </ul>
+          <ul class="nav-btn">
+            <li class="nav-link">
+              Login
+            </li>
+            <li class="nav-link register-btn">
+              Register
+            </li>
+          </ul>
+        </ul>
+        <div class="mob-nav-bar">
+          <ul class="mob-nav-list">
+            <li class="mob-nav-link mob-features">
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="icon">
+              <ul class="mob-features-list">
+                <li class="mob-features-link mob-nav-link mob-link1">
+                  <img src="./images/icon-todo.svg" alt="todolist">
+                  Todo List
+                </li>
+                <li class="mob-features-link mob-nav-link mob-link2">
+                  <img src="./images/icon-calendar.svg" alt="
+                  
+                  Calender">
+                  Calender
+                </li>
+                <li class="mob-features-link mob-nav-link mob-link3">
+                  <img src="./images/icon-reminders.svg" alt="Reminders">
+                  Reminders
+                </li>
+                <li class="mob-features-link mob-nav-link mob-link4">
+                  <img src="./images/icon-planning.svg" alt="Planning">
+                  Planning
+                </li>
+              </ul>
+            </li>
+            <li class="mob-nav-link mob-company">
+              Company
+              <img src="./images/icon-arrow-down.svg" alt="icon">
+              <ul class="mob-company-list ">
+                <li class="mob-company-link mob-nav-link mob-link5">History</li>
+                <li class="mob-company-link mob-nav-link mob-link6">Our Team</li>
+                <li class="mob-company-link mob-nav-link mob-link7">Blog</li>
+              </ul>
+            </li>
+            <li class="mob-nav-link mob-link8">Careers</li>
+            <li class="mob-nav-link mob-link9">About</li>
+          </ul>
+          <ul class="mob-nav-btn">
+            <li class="mob-nav-link mob-link10">
+              Login
+            </li>
+            <li class="register-link mob-register-btn mob-link11">
+              Register
+            </li>
+          </ul>
+        </div>
+        <div class="menu-btn">
+          <img src="./images/icon-menu.svg" alt="menu icons" class="menu-open">
+          <img src="./images/icon-close-menu.svg" alt="menu-close-icon" class="menu-close open-close">
+        </div>
+      </nav>
+      
+      <!-- Main Content -->
+      <div class="box">
+      <div class="content">
+        <h1 class="content-heading">
+          Make <br />
+          remote work
+        </h1>
+        <p class="content-note">
+          Get your team in sync,no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <p class="learn">
+          <a href="#" class="learnmore">Learn more</a>
+        </p>
+        <div class="company-logos">
+          <img src="./images/client-databiz.svg" alt="databiz-company-logo" />
+          <img src="./images/client-audiophile.svg" alt="audiophile-company-logo" />
+          <img src="./images/client-meet.svg" alt="meet-company-logo" />
+          <img src="./images/client-maker.svg" alt="maker-company-logo" />
+        </div>
+      </div> 
+      <img src="./images/image-hero-desktop.png" alt="hero-desktop-illusation" class="desktop-hero" />
+      <img src="./images/image-hero-mobile.png" alt="hero-mobile" class="mobile-hero" />
+    </div>
+    </main>
+
+    
+    <script>
+      const menu_btn=document.querySelector('.menu-btn');
+      const navbar=document.querySelector('.mob-nav-bar');
+      const menu_open=document.querySelector('.menu-open');
+      const menu_close=document.querySelector('.menu-close');
+      const features=document.querySelector('.mob-features');
+      const features_list=document.querySelector('.mob-features-list')
+      const company=document.querySelector('.mob-company');
+      const company_list=document.querySelector('.mob-company-list');
+      const select=document.querySelector('.mob-link1')
+      const select2=document.querySelector('.mob-link2')
+      const select3=document.querySelector('.mob-link3')
+      const select4=document.querySelector('.mob-link4')
+      const select5=document.querySelector('.mob-link5')
+      const select6=document.querySelector('.mob-link6')
+      const select7=document.querySelector('.mob-link7')
+      const select8=document.querySelector('.mob-link8')
+      const select9=document.querySelector('.mob-link9')
+      const select10=document.querySelector('.mob-link10')
+      const select11=document.querySelector('.mob-link11')
+      menu_btn.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      features.addEventListener('click',()=>{
+        features_list.classList.toggle('mob-features-block')
+      });
+      company.addEventListener('click',()=>{
+        company_list.classList.toggle('mob-company-block')
+      });
+
+      select.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      
+      select2.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      select3.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      select4.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      select5.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      select6.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      select7.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      select8.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      select9.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      select10.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });
+      select11.addEventListener('click',()=>{
+        navbar.classList.toggle('close-bar');
+        menu_open.classList.toggle('open-close');
+        menu_close.classList.toggle('open-close');
+      });      
+
+    </script>
+  </body>
+</html>
