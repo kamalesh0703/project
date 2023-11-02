@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -17,11 +16,13 @@
   <body>
     <nav>
       <div class="company">
-        <div class="mob-menu"><img src="./images/icon-menu.svg" alt="" />
+        <div class="mob-menu"><img src="./images/icon-menu.svg" alt="" class="show"/>
+          <img src="./images/icon-close.svg" class="close" alt="">
         </div>
         <img src="./images/logo.svg" alt="company-logo" class="logo" />
       </div>
       <div class="nav-lists">
+        <div class="meeenu"></div>
         <div class="nav-list-left">
           <li class="nav-link"><a href="#">Collections</a></li>
           <li class="nav-link"><a href="#">Men</a></li>
@@ -31,7 +32,7 @@
         </div>
         <div class="nav-list-right">
           <li class="right-nav-link cart">
-            <a href="#"><img src="./images/icon-cart.svg" alt="" /></a>
+            <a href="#"><img src="./images/icon-cart.svg" alt="cart-img" class="cart" /></a>
             <div class="car-box">
               <h4>Cart</h4>
               <div class="cart-details">
@@ -51,10 +52,11 @@
                     class="delete-icon"
                   />
                 </p>
+                <!-- <p class="empty-card">Your cart is Empty</p> -->
               </div>
-              <div class="card-box-btn">
+              <div class="card-box-btn"> 
                 <button>Check Out</button>
-              </div>
+            </div>
             </div>
           </li>
           <li class="right-nav-link">
