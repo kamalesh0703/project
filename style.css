@@ -237,10 +237,10 @@ nav{
     .close{
         display: none;
     }
-    .cart{
+    /* .cart{
         width: 15px;
         height: 15px;
-    }
+    } */
     .nav-lists{
         width: max-content;
         padding: 0px;
@@ -253,7 +253,7 @@ nav{
         display: flex;
         align-items: center;
         height: 100%;
-        padding: 8px 0px;
+        padding: 15px 0px;
         margin: 0px 5px;
         border-bottom: 2px solid var(--White);
     }
@@ -271,5 +271,8 @@ nav{
     border-radius: .5rem;
     padding-bottom: 20px;
     box-shadow: 2px 7px 10px 15px hsla(0, 0%, 41%, 0.101);
+}
+img{
+    padding-top: 5px;
 }
 }
