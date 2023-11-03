@@ -232,10 +232,10 @@ nav {
   .close {
     display: none;
   }
-  /* .cart{
+  .cart{
         width: 15px;
         height: 15px;
-    } */
+    }
   .nav-lists {
     width: max-content;
     padding: 0px;
@@ -267,7 +267,5 @@ nav {
     padding-bottom: 20px;
     box-shadow: 2px 7px 10px 15px hsla(0, 0%, 41%, 0.101);
   }
-  img {
-    padding-top: 5px;
-  }
+ 
 }
