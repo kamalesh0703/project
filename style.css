@@ -192,7 +192,7 @@ nav{
         height: max-content;
         justify-content: start;
     }
-    /* .meeenu{
+    /* .menu-select-bg{
         display: none;
         position: fixed;
         top: 0;
@@ -238,8 +238,8 @@ nav{
         display: none;
     }
     .cart{
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
     }
     .nav-lists{
         width: max-content;
@@ -248,4 +248,28 @@ nav{
         align-content: center;
         justify-content: space-between;
     }
+    .right-nav-link{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 8px 0px;
+        margin: 0px 5px;
+        border-bottom: 2px solid var(--White);
+    }
+    .car-box{
+        width: 98%;
+    }
+    .car-box{
+    width: 350px;
+    height: 220px;
+    display: none;
+    position: absolute;
+    top: 95%;
+    right: -350%;
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    padding-bottom: 20px;
+    box-shadow: 2px 7px 10px 15px hsla(0, 0%, 41%, 0.101);
+}
 }
