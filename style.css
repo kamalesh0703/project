@@ -170,48 +170,5 @@ nav {
   text-align: center;
 }
 @media only screen and (max-width: 375px) {
-  .mob-menu {
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .company{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .mob-menu{
-    padding: 5px 10px 0 0;
-  }
-  nav{
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    border: none;
-  }
-  .nav-list-left{
-    display: none;
-  }
-  .close{
-    display: none;
-  }
-  .nav-lists{
-    padding-left: 5px;
-  }
-  .right-nav-link{
-    margin: 0px 5px;
-    padding: 0px;
-  }
-  /* .cart{
-    padding-top: 5px;
-  } */
-  .avator{
-    width: 32px;
-    height: 32px;
-  }
-  .nav-list-right img{
-    vertical-align: baseline;
-  }
+  
 }
