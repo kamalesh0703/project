@@ -189,6 +189,7 @@ nav {
     padding: 10px;
     display: flex;
     align-items: center;
+    border: none;
   }
   .nav-list-left{
     display: none;
@@ -203,9 +204,9 @@ nav {
     margin: 0px 5px;
     padding: 0px;
   }
-  .cart{
+  /* .cart{
     padding-top: 5px;
-  }
+  } */
   .avator{
     width: 32px;
     height: 32px;
