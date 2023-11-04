@@ -211,4 +211,7 @@ nav {
     width: 32px;
     height: 32px;
   }
+  .nav-list-right img{
+    vertical-align: baseline;
+  }
 }
