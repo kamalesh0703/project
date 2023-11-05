@@ -169,6 +169,133 @@ nav {
 .empty-card {
   text-align: center;
 }
+.mob-nav-bar{
+  display: none;
+}
+.carbox{
+  display: none;
+}
+.hover-card{
+  display: none;
+}
 @media only screen and (max-width: 375px) {
+  .nav-bar{
+    display: none;
+  }
+  .mob-menu-btn{
+    padding: 4px 15px 0 0;
+    z-index: 4;
+  }
+  .mob-nav-bar{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    position: relative;
+  }
+  .left-mob-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .close-menu{
+    display: none;
+  }
+  .right-mob-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right-mob-menu>img{
+    margin-left: 20px ;
+  }
+  .cart-icon{
+    cursor: pointer;
+  }
+  .cardbox{
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    width:90%;
+    min-height: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    padding-bottom: 20px;
+    box-shadow: 2px 7px 10px 15px hsla(0, 0%, 41%, 0.101);
+    z-index: 11;
+    margin-top: 10px;
+  }
+  .cartname-details{
+    padding: 0% 10px 0 10px;
+    font-size: 15px;
+  }
+  .cardbox > h4 {
+    padding: 15px 15px;
+    border-bottom: 1px solid var(--Grayish-blue);
+  }
+  .hover-card{
+    display: none;
+  }
+  .mob-menu-list{
+    display: none;
+  }
+  .mob-menu-close{
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    z-index: 3;
+  }
+  .nav-link>a{
+    color: black;
+
+  }
+  .select-bg-image{
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px); 
+      z-index: 1;
+  }
+  .mob-menu-list>.nav-link{
+    width: max-content;
+    height: 0%;
+    padding: 15px 0;
+    margin: 10px 0 10px 20px;
+  }
+  .avator{
+    cursor: pointer;
+  }
+  .nav-link>a{
+    font-weight: bold;
+  }
+  .open{
+    display: block;
+  }
+  .close{
+    display: none;
+  }
+  .open-menu{
+    cursor: pointer;
+  }
+  .close-menu{
+    cursor: pointer;
+  }
+  body{
+    z-index: 1;
+  }
+.check{
+  z-index: 9;
+}
   
 }
