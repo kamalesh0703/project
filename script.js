@@ -44,3 +44,20 @@ const quantityincrease = () => {
   var total=counter*cost;
    totalamount.innerText=total.toFixed(2);
 }
+
+const addCart=()=>{
+   const cart=document.querySelector('.cart-box');
+   const emptycart=document.querySelector('.emptycart-box');
+   const emptycart_none=document.querySelector('.emptycart-box-none');
+
+   emptycart.classList.toggle('emptycart-box');
+   emptycart.classList.toggle('emptycart-box-none');
+   cart.classList.add('car-box');
+}
+const deletecart=()=>{
+   const cart=document.querySelector('.cart-box');
+   const emptycart_none=document.querySelector('.emptycart-box-none');
+   emptycart_none.classList.toggle('emptycart-box');
+   emptycart_none.classList.toggle('emptycart-box-none');
+   cart.classList.remove('car-box');
+}

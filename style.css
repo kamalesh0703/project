@@ -30,6 +30,7 @@ nav {
   border-bottom: 1px solid var(--Grayish-blue);
   position: sticky;
   top: 0px;
+  background-color: var(--White);
 }
 .nav-lists {
   width: max-content;
@@ -103,7 +104,7 @@ nav {
 .cart {
   position: relative;
 }
-.car-box {
+.cart-box {
   width: 350px;
   height: 220px;
   display: none;
@@ -160,9 +161,6 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.empty-card {
-  text-align: center;
-}
 .mob-nav-bar{
   display: none;
 }
@@ -172,6 +170,35 @@ nav {
 .hover-card{
   display: none;
 }
+.emptycart-box{
+  width: 350px;
+  display: none;
+  height: 200px;
+  position: absolute;
+  top: 95%;
+  right: -350%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  box-shadow: 2px 7px 10px 15px hsla(0, 0%, 41%, 0.101);
+}
+.cart:hover .emptycart-box{
+  display: block;
+}
+.emptycart-box-none{
+  display: none;
+}
+.emptycart-box > h4 {
+  padding: 15px 15px;
+  border-bottom: 1px solid var(--Grayish-blue);
+}
+.emptycart-details{
+  display: flex;
+  height: 75%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
 @media only screen and (max-width: 375px) {
   .nav-bar{
     display: none;
