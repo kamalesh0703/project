@@ -31,7 +31,7 @@
             <img src="./images/image-product-1-thumbnail.jpg" alt="img" class="card-tumb-img" />
             <div class="cartname-details">
               <p>Fall Limited Edition Sneakers</p>
-              <p>$125.00 &#10005; 3 $375.00</p>
+              <p>$125.00 &#10005;<span id="quan-count">1</span> <span>$<span id="tot-amount">125.00</span></span></p>
             </div>
             <p>
               <img src="./images/icon-delete.svg" alt="icon" class="delete-icon" />
@@ -76,7 +76,7 @@
         <img src="./images/image-product-1-thumbnail.jpg" alt="img" class="card-tumb-img" />
         <div class="cartname-details">
           <p>Fall Limited Edition Sneakers</p>
-          <p>$125.00 &#10005; 3 $375.00</p>
+          <p>$125.00 &#10005;<span class="mob-quan-count">2</span> <span>$<span class="mob-tot-amount">125.00</span></span></p>
         </div>
         <p>
           <img src="./images/icon-delete.svg" alt="icon" class="delete-icon" />
@@ -120,9 +120,9 @@
       </p>
       <div class="quantity-add-cart">
         <div class="quantity">
-          <img src="./images/icon-minus.svg" alt="">
-          <p>0</p>
-          <img src="./images/icon-plus.svg" alt="">
+          <img src="./images/icon-minus.svg" alt="minus-icon" onclick="quantitydecrease()">
+          <p id="quantity-count">1</p>
+          <img src="./images/icon-plus.svg" alt="plus-icon" onclick="quantityincrease()">
         </div>
         <button>
           <i>
