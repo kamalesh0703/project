@@ -1,63 +1,69 @@
-var cart_icon = document.querySelector(".cart-icon");
-var card_box = document.querySelector(".cardbox");
-
-cart_icon.addEventListener('click', () => {
-   card_box.classList.toggle('hover-card');
-});
-
-let menu_btn = document.querySelector('.mob-menu-btn');
-let open_btn = document.querySelector('.open-menu');
-let close_btn = document.querySelector('.close-menu');
-let menu = document.querySelector('.mob-menu-list');
-
-menu_btn.addEventListener('click', () => {
-   menu.classList.toggle('mob-menu-close');
-   close_btn.classList.toggle('open');
-   open_btn.classList.toggle('close');
-});
+function carttoggle() {
+    var x = document.getElementById("mob-cart-box");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
 
-var counter = 1;
-const quantity = document.getElementById("quantity-count");
-let  setcount = document.getElementById('quan-count');
-let totalamount=document.getElementById('tot-amount');
-let cost=125.00;
-
-const quantitydecrease = () => {
-   if (quantity.innerText == 1) {
-      quantity.innerText = counter;
-   }
-   else {
-      counter--;
-      quantity.innerText = counter;
-      setcount.innerHTML = counter;
-     var  total=counter*cost;
-      totalamount.innerText=total.toFixed(2);
-
-   }
-}
-
-const quantityincrease = () => {
-   counter++;
-   quantity.innerText = counter;
-   setcount.innerHTML = counter;
-  var total=counter*cost;
-   totalamount.innerText=total.toFixed(2);
-}
-
+const emptycart=document.getElementById('isCartEmpty');
+const cartdetails=document.getElementById('card-details');
+const mobile_emptycart=document.getElementById('mob-isCartEmpty');
+const mobile_cartdetails=document.getElementById('mob-cart-details');
 const addCart=()=>{
-   const cart=document.querySelector('.cart-box');
-   const emptycart=document.querySelector('.emptycart-box');
-   const emptycart_none=document.querySelector('.emptycart-box-none');
+    emptycart.style.display="none";
+    cartdetails.style.display="block";
 
-   emptycart.classList.toggle('emptycart-box');
-   emptycart.classList.toggle('emptycart-box-none');
-   cart.classList.add('car-box');
+    mobile_cartdetails.style.display="block";
+    mobile_emptycart.style.display="none";
 }
+
 const deletecart=()=>{
-   const cart=document.querySelector('.cart-box');
-   const emptycart_none=document.querySelector('.emptycart-box-none');
-   emptycart_none.classList.toggle('emptycart-box');
-   emptycart_none.classList.toggle('emptycart-box-none');
-   cart.classList.remove('car-box');
+    emptycart.style.display="flex";
+    cartdetails.style.display="none";
+
+    mobile_cartdetails.style.display="none";
+    mobile_emptycart.style.display="flex";
 }
+
+let count=1;
+let cost=125.00;
+const quantity_count=document.querySelector('#quantity');
+const quantity=document.querySelector('.quantity-count');
+const mobilequantity=document.querySelector('.mob-quantity-count');
+const total=document.querySelector('.total-amount');
+const mobiletotal=document.querySelector('.mob-total-amount');
+const quantitydecrease=()=>{
+    if(count>1){
+        count--;
+        quantity_count.innerHTML=count;
+        quantity.innerHTML=count;
+        mobilequantity.innerHTML=count;
+        totalamount=(count*cost).toFixed(2);
+       total.innerHTML= totalamount;
+       mobiletotal.innerHTML= totalamount;
+    }
+}
+const quantityincrease=()=>{
+    count++;
+    quantity_count.innerHTML=count;
+    quantity.innerHTML=count;
+    mobilequantity.innerHTML=count;
+    totalamount=(count*cost).toFixed(2);
+    total.innerHTML= totalamount;
+    mobiletotal.innerHTML= totalamount;
+}
+
+// Nav  menu toggle
+const humbber=document.querySelector('.mob-menu-btn');
+const openmenu=document.querySelector('.open-menu');
+const closemenu=document.querySelector('.close-menu');
+
+humbber.addEventListener('click',()=>{
+    openmenu.classList.toggle('close-menu');
+    openmenu.classList.toggle('open-menu');
+    closemenu.classList.toggle('open-menu');
+    closemenu.classList.toggle('close-menu');
+})
