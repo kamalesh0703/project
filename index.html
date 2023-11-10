@@ -36,8 +36,8 @@
               <img src="./images/image-product-1.jpg" alt="shoe-img" width="50px" height="50px" class="product-img">
               <div class="product-details">
                 <p class="product-name">Fall Limited Edition sneaker</p>
-                <p class="product-cost"> $125.00 <i>&#xd7;</i><span class="quantity-count">1</span><span style="font-weight: bold;">$<span
-                      class="total-amount">125.00</span></span></p>
+                <p class="product-cost"> $125.00 <i>&#xd7;</i><span class="quantity-count">1</span><span
+                    style="font-weight: bold;">$<span class="total-amount">125.00</span></span></p>
               </div>
               <i onclick="deletecart()" class="delete-icon"> <img src="./images/icon-delete.svg" alt="delete-icon"></i>
             </div>
@@ -75,7 +75,7 @@
       <img src="./images/image-avatar.png" alt="avator" class="avator">
     </div>
     <!-- Mobile cart section -->
-    <div class="mob-cart-box" id="mob-cart-box" >
+    <div class="mob-cart-box" id="mob-cart-box">
       <h4 class="cartHeading">Cart</h4>
       <div class="mob-isCartEmpty" id="mob-isCartEmpty">
         <p class="mob-empty-note">Your Cart is Empty</p>
@@ -85,7 +85,8 @@
           <img src="./images/image-product-1.jpg" alt="shoe-img" width="50px" height="50px" class="mob-product-img">
           <div class="mob-product-details">
             <p class="mob-product-name">Fall Limited Edition sneaker</p>
-            <p>$125.00 <span>&#xd7;</span> <span class="mob-quantity-count">1</span> <span style="font-weight: bold;">$<span class="mob-total-amount">125.00</span></span></p>
+            <p>$125.00 <span>&#xd7;</span> <span class="mob-quantity-count">1</span> <span
+                style="font-weight: bold;">$<span class="mob-total-amount">125.00</span></span></p>
           </div>
           <i class="delete-icon" onclick="deletecart()"><img src="./images/icon-delete.svg" alt=""></i>
         </div>
@@ -94,12 +95,14 @@
     </div>
     <!-- Mobile cart section End -->
   </nav>
-  
+
   <!-- Main Section -->
-  
+
   <div class="main-section">
     <div class="left">
       <img src="./images/image-product-1.jpg" alt="img-1" class="main-img">
+      <img src="./images/icon-previous.svg" alt="" class="left-arrow">
+      <img src="./images/icon-next.svg" alt="" class="right-arrow">
       <div class="tumbnail">
         <img src="./images/image-product-1-thumbnail.jpg" alt="img2" class="img-thumb">
         <img src="./images/image-product-3-thumbnail.jpg" alt="img3" class="img-thumb">
@@ -118,13 +121,15 @@
         These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
         they'll withstand everything the weather can offer.
       </p>
-      <div class="product-cost-offers">
-        <h1 class="product-cost">$125.00</h1>
-        <p class="discount-percentage">50%</p>
+      <div class="mob-cost-details">
+        <div class="product-cost-offers">
+          <h1 class="product-cost">$125.00</h1>
+          <p class="discount-percentage">50%</p>
+        </div>
+        <p class="discount-cost">
+          $250.00
+        </p>
       </div>
-      <p class="discount-cost">
-        $250.00
-      </p>
       <div class="quantity-add-cart">
         <div class="quantity">
           <img src="./images/icon-minus.svg" alt="minus-icon" onclick="quantitydecrease()">

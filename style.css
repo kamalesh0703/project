@@ -215,7 +215,7 @@ nav {
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .nav-bar {
     display: none;
   }
@@ -236,6 +236,7 @@ nav {
     position: relative;
     position: sticky;
     top: 0px;
+    z-index: 99;
   }
 
   .left-mob-menu {
@@ -377,7 +378,6 @@ nav {
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   font-family: "Kumbh Sans", sans-serif;
   padding: 2% 0 0 0;
@@ -488,6 +488,66 @@ nav {
   padding: 0px 5px;
 }
 
-/* #tot-amount{
-  padding: 0px 10px;
-} */
+/* Mobile Main Section */
+
+@media only screen and (max-width: 850px){
+  .main-section {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    padding: 0rem 0px 0rem 0px;
+  }
+  .left{
+    position: relative;
+  }
+  .right{
+    padding: 20px 20px 80px 20px;
+  }
+  .tumbnail{
+    display: none;
+  }
+  .quantity-add-cart {
+    display: grid;
+    gap: 20%;
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+  .left-arrow{
+    position: absolute;
+    top: 42%;
+    left: 15px;
+    background-color: var(--Light-grayish-blue);
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .right-arrow{
+    position: absolute;
+    top: 42%;
+    right: 15px;
+    background-color: var(--Light-grayish-blue);
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .company-name{
+    padding: 0px 0px 10px 0px;
+  }
+  .limited-edition{
+    font-size: 9vw;
+    line-height: normal;
+  }
+  .product-note{
+    font-size: 16px;
+  }
+  .quantity-add-cart>button{
+    padding: 15px 0px;
+  }
+  .mob-cost-details{
+    display: flex;
+    justify-content: space-between;
+  }
+}
