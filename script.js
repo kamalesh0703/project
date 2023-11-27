@@ -57,6 +57,7 @@ const quantityincrease = () => {
 }
 
 // Nav  menu toggle
+
 const humbber = document.querySelector('.mob-menu-btn');
 const openmenu = document.querySelector('.open-menu');
 const closemenu = document.querySelector('.close-menu');
@@ -79,9 +80,14 @@ imgselect.forEach((img) => {
 })
 
 const moveside = () => {
-  // const MainImgWidth = document.querySelector('.main-image:first-child').clientWidth;
   let width = (ImgID-1) *100;
   document.querySelectorAll('.light-box-main-image').forEach(n=>n.style.transform = `translateX(${-width}%)`);
   console.log(width)
 
 }
+
+const closeOverlay=document.querySelector('.close-overlay');
+
+closeOverlay.addEventListener('click',()=>{
+  document.querySelector('.overlay').style.display="none";
+})
